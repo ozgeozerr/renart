@@ -3,7 +3,7 @@ import "./App.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-const API_URL = "http://localhost:4000/products";
+const API_URL = "https://renart-kh22.onrender.com/products";
 
 const COLORS = [
   { key: "yellow", label: "Yellow Gold", color: "#E6CA97" },
