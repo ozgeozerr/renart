@@ -1,0 +1,242 @@
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  font-family: 'Avenir', 'Montserrat', Arial, sans-serif;
+  background: #fff;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.product-card {
+  background: #fafafa;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 350px;
+}
+
+.product-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.product-color-picker {
+  margin-bottom: 4px;
+  margin-top: -4px;
+}
+
+.color-label {
+  font-size: 0.95rem;
+  color: #b49c5a;
+  margin-bottom: 8px;
+  margin-top: 2px;
+  min-height: 18px;
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.product-popularity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.stars {
+  color: #E6CA97;
+  font-size: 1.1rem;
+}
+
+.score {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .App {
+    padding: 16px 2px;
+  }
+  .product-card {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .product-card {
+    padding: 12px 4px 8px 4px;
+    min-height: 250px;
+  }
+  .product-img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.filters label {
+  font-weight: 500;
+  margin-right: 4px;
+}
+.filters input[type='number'] {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 1rem;
+  margin: 0 2px;
+}
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.large-filters {
+  background: #f5f3ef;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(230,202,151,0.08);
+  padding: 24px 32px;
+  margin-bottom: 32px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  align-items: center;
+}
+.large-filters label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.large-filters select, .large-filters input[type='number'] {
+  font-size: 1.1rem;
+  height: 36px;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin: 0 4px;
+}
+@media (max-width: 600px) {
+  .large-filters {
+    padding: 12px 6px;
+    font-size: 1rem;
+  }
+}
+
+.price-slider-group {
+  min-width: 260px;
+  max-width: 350px;
+  margin-right: 24px;
+}
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.98rem;
+  color: #b49c5a;
+  margin-bottom: 2px;
+}
+.slider-inputs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.slider-inputs input[type='range'] {
+  width: 45%;
+  accent-color: #e6ca97;
+  height: 4px;
+}
+.selected-range {
+  text-align: center;
+  font-size: 1.08rem;
+  color: #222;
+  font-weight: 600;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+@media (max-width: 600px) {
+  .price-slider-group {
+    min-width: 180px;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .slider-inputs input[type='range'] {
+    width: 90%;
+  }
+}
